@@ -19,7 +19,29 @@ export default function Home() {
           priority
         />
       </main>
-      <footer></footer>
+      <footer>
+        <div className="text-align: center; padding: 1rem; background-color: #f4f4f4;">
+          <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
+          <p>
+            <a
+              href="https://github.com/danielechevarria"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            |
+            <a
+              href="https://linkedin.com/in/danielechevarria"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>{" "}
+            |<a href="mailto:dan.echevarri@gmail.com">Contact</a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
