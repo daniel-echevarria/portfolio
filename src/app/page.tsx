@@ -24,15 +24,15 @@ export default function Home() {
           <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
           <p>
             <a
-              href="https://github.com/danielechevarria"
+              href="https://github.com/daniel-echevarria"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </a>{" "}
-            |
+            '|
             <a
-              href="https://linkedin.com/in/danielechevarria"
+              href="https://www.linkedin.com/in/daniel-e-772683335"
               target="_blank"
               rel="noopener noreferrer"
             >
