@@ -1,15 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <nav className="w-full justify-between flex text-grey-900 text-xl font-bold">
-        <button className="hover:underline">Daniel Echevarria</button>
-        <button className="hover:underline">About</button>
+        <Link className="hover:underline" href="/">
+          Daniel Echevarria
+        </Link>
+        <Link className="hover:underline" href="/about">
+          About
+        </Link>
       </nav>
-      <main>
-        <h1 className="text-6xl">Full Stack Web Developer</h1>
+      <main className="w-full">
+        <h1 className=" font-semibold text-7xl">Full Stack Web Developer</h1>
         <Image
           className="dark:invert"
           src="/me.jpg"
