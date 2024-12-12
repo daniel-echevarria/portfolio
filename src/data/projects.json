@@ -3,43 +3,40 @@
     "title": "Slick Messenger",
     "subtitle": "A slack clone",
     "image": {
-      "src": "slick.png",
+      "src": "/slick.png",
       "alt": "slick messenger app screen shot",
-      "width": "3396",
-      "height": "2106"
+      "width": 3396,
+      "height": 2106
     }
   },
-
   {
     "title": "Where is Waldo",
     "subtitle": "A photo tagging app",
     "image": {
-      "src": "waldo.png",
+      "src": "/waldo.png",
       "alt": "where is waldo app screen shot",
-      "width": "2878",
-      "height": "2097"
+      "width": 2878,
+      "height": 2097
     }
   },
-
   {
     "title": "Pokememory",
     "subtitle": "A memory card game",
     "image": {
-      "src": "pokememory.png",
+      "src": "/pokememory.png",
       "alt": "Pokememory app screen shot",
-      "width": "3330",
-      "height": "2092"
+      "width": 3330,
+      "height": 2092
     }
   },
-
   {
     "title": "Terminal Chess",
     "subtitle": "A chess game in the terminal",
     "image": {
-      "src": "chess.png",
+      "src": "/chess.png",
       "alt": "terminal chess app screen shot",
-      "width": "1554",
-      "height": "1670"
+      "width": 1554,
+      "height": 1670
     }
   }
 ]
