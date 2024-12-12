@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import projects from "../data/projects.json";
 
 export default function Home() {
+  console.log(projects);
+  const CardList = () => {};
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <nav className="w-full justify-between flex text-grey-900 text-xl font-bold">
@@ -19,8 +22,8 @@ export default function Home() {
           className="dark:invert"
           src="/me.jpg"
           alt="daniel echevarria"
-          width={1000}
-          height={400}
+          width={2428}
+          height={3238}
           priority
         />
       </main>
