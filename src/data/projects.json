@@ -3,7 +3,7 @@
     "title": "Slick Messenger",
     "subtitle": "A slack clone",
     "image": {
-      "src": "/slick.png",
+      "src": "/slick-messenger.png",
       "alt": "slick messenger app screen shot",
       "width": 3396,
       "height": 2106
@@ -13,7 +13,7 @@
     "title": "Where is Waldo",
     "subtitle": "A photo tagging app",
     "image": {
-      "src": "/waldo.png",
+      "src": "/where-is-waldo.png",
       "alt": "where is waldo app screen shot",
       "width": 2878,
       "height": 2097
@@ -33,7 +33,7 @@
     "title": "Terminal Chess",
     "subtitle": "A chess game in the terminal",
     "image": {
-      "src": "/chess.png",
+      "src": "/terminal-chess.png",
       "alt": "terminal chess app screen shot",
       "width": 1554,
       "height": 1670

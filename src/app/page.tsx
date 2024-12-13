@@ -5,19 +5,8 @@ import projects from "../data/projects.json";
 import Card from "@/components/Card";
 
 export default function Home() {
-  const CardList = () => {
-    const list = projects.map((project) => (
-      <Card
-        image={project.image}
-        title={project.title}
-        subtitle={project.subtitle}
-      />
-    ));
-    return list;
-  };
-
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_300px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <nav className="w-full justify-between flex text-grey-900 text-xl font-bold">
         <Link className="hover:underline" href="/">
           Daniel Echevarria
@@ -26,9 +15,41 @@ export default function Home() {
           About
         </Link>
       </nav>
+      <h1 className=" w-full font-semibold text-7xl">
+        Full Stack Web Developer. Programming Artist.
+      </h1>
+
       <main className="w-full">
-        <CardList />
-        <h1 className=" font-semibold text-7xl">Full Stack Web Developer</h1>
+        <div className="grid grid-cols-2 gap-32">
+          <div className="flex flex-col gap-32">
+            {projects.map(
+              (project, index) =>
+                index % 2 === 0 && (
+                  <Card
+                    key={index}
+                    image={project.image}
+                    title={project.title}
+                    subtitle={project.subtitle}
+                  />
+                )
+            )}
+          </div>
+
+          <div className="flex flex-col gap-32 mt-72">
+            {projects.map(
+              (project, index) =>
+                index % 2 === 1 && (
+                  <Card
+                    key={index}
+                    image={project.image}
+                    title={project.title}
+                    subtitle={project.subtitle}
+                  />
+                )
+            )}
+          </div>
+        </div>
+
         <Image
           className="dark:invert"
           src="/me.jpg"
@@ -38,6 +59,7 @@ export default function Home() {
           priority
         />
       </main>
+
       <footer>
         <div className="text-align: center; padding: 1rem; background-color: #f4f4f4;">
           <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
