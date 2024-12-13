@@ -7,7 +7,7 @@ import Card from "@/components/Card";
 export default function Home() {
   return (
     <>
-      <nav className="z-10 w-full justify-between flex text-grey-900 text-xl font-bold p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <nav className="z-10 w-full justify-between flex text-grey-900 text-xl font-bold p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <Link className="hover:underline" href="/">
           Daniel Echevarria
         </Link>
@@ -15,13 +15,13 @@ export default function Home() {
           About
         </Link>
       </nav>
-      <div className="grid grid-rows-[300px_1fr_20px] lg:grid-rows-[400px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <h1 className="w-full font-semibold text-5xl md:text-6xl lg:text-7xl">
+      <div className="grid grid-rows-[100px_1fr_20px] lg:grid-rows-[400px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <h1 className="w-full font-semibold text-3xl sm:text-5xl lg:text-7xl ">
           Full Stack Web Developer. <br />
           Programming Artist.
         </h1>
 
-        <main className="w-full">
+        <main className="w-full lg:max-w-7xl">
           <div className="lg:grid grid-cols-2 gap-32">
             <div className="flex flex-col gap-16 lg:gap-32">
               {projects.map(
@@ -38,7 +38,7 @@ export default function Home() {
               )}
             </div>
 
-            <div className="flex flex-col lg:mt-72 gap-16 lg:gap-32 ">
+            <div className="flex flex-col gap-16 lg:gap-32 mt-10 lg:mt-72">
               {projects.map(
                 (project, index) =>
                   index % 2 === 1 && (
