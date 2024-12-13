@@ -2,41 +2,49 @@
   {
     "title": "Slick Messenger",
     "subtitle": "A slack clone",
+    "live-link": "https://slick-messenger.netlify.app",
+    "link": "slick-messenger",
     "image": {
       "src": "/slick-messenger.png",
       "alt": "slick messenger app screen shot",
-      "width": 3396,
-      "height": 2106
+      "width": 1300,
+      "height": 1600
     }
   },
   {
     "title": "Where is Waldo",
-    "subtitle": "A photo tagging app",
+    "subtitle": "A photo tagging game",
+    "live-link": "https://wherethefuckiswaldo.netlify.app",
+    "link": "where-is-waldo",
     "image": {
       "src": "/where-is-waldo.png",
       "alt": "where is waldo app screen shot",
-      "width": 2878,
-      "height": 2097
+      "width": 1300,
+      "height": 1600
     }
   },
   {
     "title": "Pokememory",
     "subtitle": "A memory card game",
+    "live-link": "https://pokememorize.netlify.app/",
+    "link": "pokememory",
     "image": {
       "src": "/pokememory.png",
       "alt": "Pokememory app screen shot",
-      "width": 3330,
-      "height": 2092
+      "width": 1300,
+      "height": 1600
     }
   },
   {
     "title": "Terminal Chess",
     "subtitle": "A chess game in the terminal",
+    "live-link": "https://replit.com/@SpookyKasper/chess-game",
+    "link": "terminal-chess",
     "image": {
       "src": "/terminal-chess.png",
       "alt": "terminal chess app screen shot",
-      "width": 1554,
-      "height": 1670
+      "width": 1300,
+      "height": 1600
     }
   }
 ]
