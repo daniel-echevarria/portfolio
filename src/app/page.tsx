@@ -3,20 +3,26 @@ import Link from "next/link";
 import React from "react";
 import projects from "../data/projects.json";
 import Card from "@/components/Card";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { inter, merriweather, shippori } from "./ui/fonts";
 
 export default function Home() {
   return (
     <>
-      <nav className="z-10 w-full justify-between flex text-grey-900 text-xl font-bold p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <Link className="hover:underline" href="/">
+      <nav className="z-10 w-full justify-between flex text-grey-900 text-xl font-bold p-8 sm:p-20">
+        <Link className={`hover:underline`} href="/">
           Daniel Echevarria
         </Link>
-        <Link className="hover:underline" href="/about">
+        <Link className={`hover:underline`} href={"/about"}>
           About
         </Link>
       </nav>
-      <div className="grid grid-rows-[100px_1fr_20px] lg:grid-rows-[400px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <h1 className="w-full font-semibold text-3xl sm:text-5xl lg:text-7xl ">
+      <div
+        className={`grid grid-rows-[100px_1fr_20px] lg:grid-rows-[400px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ]`}
+      >
+        <h1
+          className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl `}
+        >
           Full Stack Web Developer. <br />
           Programming Artist.
         </h1>
@@ -53,38 +59,48 @@ export default function Home() {
               )}
             </div>
           </div>
-
-          <Image
-            className="dark:invert"
-            src="/me.jpg"
-            alt="daniel echevarria"
-            width={2428}
-            height={3238}
-            priority
-          />
+          <div className="grid grid-cols-2 mt-64 pb-16 border-b border-gray-900">
+            <div className="grid grid-rows-[1fr_1px_1fr]">
+              <div></div>
+              <div className="bg-gray-900 mr-10"></div>
+              <div className="py-10 mr-10">
+                <p className={`font-light text-5xl`}>
+                  A dedicated tech enthusiast eager to help bring your next idea
+                  to life.
+                </p>
+                <p className="text-xl mt-10">
+                  I'm Daniel, an independent full-stack web developer based in
+                  Berlin. I'm passionate about the creative process of taking an
+                  idea, breaking it apart, and materializing it, piece by piece.
+                </p>
+              </div>
+            </div>
+            <div className="px-16 py-10">
+              <Image
+                src="/me.jpg"
+                alt="daniel echevarria"
+                width={2428}
+                height={3238}
+                priority
+              />
+              <div className="flex gap-2 mt-5">
+                <a href="https://www.linkedin.com/in/daniel-e-772683335">
+                  <FaLinkedin size={24} />
+                </a>
+                <a href="https://github.com/daniel-echevarria">
+                  <FaGithub size={24} />
+                </a>
+                <a href="mailto:dan.echevarri@gmail.com">
+                  <FaEnvelope size={24} />
+                </a>
+              </div>
+            </div>
+          </div>
         </main>
 
         <footer>
           <div className="text-align: center; padding: 1rem; background-color: #f4f4f4;">
             <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
-            <p>
-              <a
-                href="https://github.com/daniel-echevarria"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>{" "}
-              '|
-              <a
-                href="https://www.linkedin.com/in/daniel-e-772683335"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>{" "}
-              |<a href="mailto:dan.echevarri@gmail.com">Contact</a>
-            </p>
           </div>
         </footer>
       </div>
