@@ -59,23 +59,25 @@ export default function Home() {
               )}
             </div>
           </div>
-          <div className="grid grid-cols-2 mt-64 pb-16 border-b border-gray-900">
-            <div className="grid grid-rows-[1fr_1px_1fr]">
+          <div className="flex flex-col-reverse lg:grid grid-cols-2 mt-16 lg:mt-64 pb-16 border-b border-gray-900">
+            <div className="grid grid-rows[1px_1px_1fr] lg:grid-rows-[1fr_1px_1fr]">
               <div></div>
               <div className="bg-gray-900 mr-10"></div>
-              <div className="py-10 mr-10">
-                <p className={`font-light text-5xl`}>
+              <div className="lg:py-10 mr-10">
+                <p
+                  className={`font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl `}
+                >
                   A dedicated tech enthusiast eager to help bring your next idea
                   to life.
                 </p>
-                <p className="text-xl mt-10">
+                <p className="hidden sm:block text-l lg:text-xl mt-10">
                   I'm Daniel, an independent full-stack web developer based in
                   Berlin. I'm passionate about the creative process of taking an
                   idea, breaking it apart, and materializing it, piece by piece.
                 </p>
               </div>
             </div>
-            <div className="px-16 py-10">
+            <div className="flex flex-col justify-end lg:pl-10 py-10 ">
               <Image
                 src="/me.jpg"
                 alt="daniel echevarria"
@@ -83,15 +85,27 @@ export default function Home() {
                 height={3238}
                 priority
               />
-              <div className="flex gap-2 mt-5">
+              <div className="hidden lg:flex gap-3 mt-5 ">
                 <a href="https://www.linkedin.com/in/daniel-e-772683335">
-                  <FaLinkedin size={24} />
+                  <FaLinkedin size={26} />
                 </a>
                 <a href="https://github.com/daniel-echevarria">
-                  <FaGithub size={24} />
+                  <FaGithub size={26} />
                 </a>
                 <a href="mailto:dan.echevarri@gmail.com">
-                  <FaEnvelope size={24} />
+                  <FaEnvelope size={26} />
+                </a>
+              </div>
+
+              <div className="flex gap-2 mt-5 lg:hidden justify-center gap-10">
+                <a href="https://www.linkedin.com/in/daniel-e-772683335">
+                  <FaLinkedin size={32} />
+                </a>
+                <a href="https://github.com/daniel-echevarria">
+                  <FaGithub size={32} />
+                </a>
+                <a href="mailto:dan.echevarri@gmail.com">
+                  <FaEnvelope size={32} />
                 </a>
               </div>
             </div>
@@ -99,7 +113,7 @@ export default function Home() {
         </main>
 
         <footer>
-          <div className="text-align: center; padding: 1rem; background-color: #f4f4f4;">
+          <div className="text-sm text-center p-2">
             <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
           </div>
         </footer>

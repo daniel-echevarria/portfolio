@@ -17,22 +17,22 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ image, title, live, subtitle }) => {
   return (
-    <div className="focus:shadow-outline focus:outline-none flex flex-col items-center justify-center rounded-3xl relative overflow-hidden">
+    <div className="focus:shadow-outline focus:outline-none flex flex-col items-center justify-center rounded-3xl relative ">
       <a
         href={`${live}`}
-        className="border transition-transform hover:scale-90 overflow-hidden duration-500 rounded-3xl"
+        className="border transition-transform lg:hover:scale-90 overflow-hidden duration-500 rounded-3xl"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Image
-          className="md:p-10 bg-black transition-transform hover:scale-125 hover:cursor-pointer  duration-500 object-center object-cover border rounded-3xl"
+          className="md:p-10 bg-black transition-transform lg:hover:scale-125 hover:cursor-pointer  duration-500 object-center object-cover border rounded-3xl"
           src={image.src}
           alt={image.alt}
           width={image.width}
           height={image.height}
         />
       </a>
-      <p className="font-semibold text-xl md:mt-10">{title}</p>
+      <p className="font-semibold text-xl mt-3 md:mt-8">{title}</p>
       <p>{subtitle}</p>
     </div>
   );
