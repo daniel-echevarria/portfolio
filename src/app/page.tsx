@@ -4,7 +4,6 @@ import React from "react";
 import projects from "../data/projects.json";
 import Card from "@/components/Card";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { inter, merriweather, shippori } from "./ui/fonts";
 
 export default function Home() {
   return (
