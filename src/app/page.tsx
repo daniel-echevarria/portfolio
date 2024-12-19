@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import projects from "../data/projects.json";
 import Card from "@/components/Card";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
@@ -13,14 +12,6 @@ export default function Home() {
 
   return (
     <>
-      <nav className="z-10 w-full justify-between flex text-grey-900 text-xl font-bold p-8 sm:p-20">
-        <Link className={`hover:underline`} href="/">
-          Daniel Echevarria
-        </Link>
-        <Link className={`hover:underline`} href={"/about"}>
-          About
-        </Link>
-      </nav>
       <div
         className={`grid grid-rows-[100px_1fr_20px] lg:grid-rows-[400px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ]`}
       >
@@ -111,12 +102,6 @@ export default function Home() {
             </div>
           </div>
         </main>
-
-        <footer>
-          <div className="text-sm text-center p-2">
-            <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
-          </div>
-        </footer>
       </div>
     </>
   );
