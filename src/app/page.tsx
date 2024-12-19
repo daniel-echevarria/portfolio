@@ -7,9 +7,9 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   const miniBio = `I'm Daniel, an independent full-stack web developer based in
-    Berlin. I'm passionate about the collaborative and creative
+    Berlin. I'm passionate about the creative
     process of taking an idea, breaking it apart, and
-    materializing it, piece by piece.`;
+    materializing it, piece by piece. Let's do it together!`;
 
   return (
     <>
@@ -69,10 +69,12 @@ export default function Home() {
               <div className="bg-gray-900 mr-10"></div>
               <div className="lg:py-10 mr-10">
                 <p className="font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                <p className="font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                   A dedicated tech enthusiast eager to help bring your next idea
                   to life.
                 </p>
                 <p className="hidden sm:block text-l lg:text-xl mt-10">
+                  {miniBio}
                   {miniBio}
                 </p>
               </div>
@@ -80,6 +82,7 @@ export default function Home() {
             <div className="flex flex-col justify-end lg:pl-10 py-10 ">
               <Image
                 src="/me.jpg"
+                alt="picture of daniel echevarria looking professional"
                 alt="picture of daniel echevarria looking professional"
                 width={2428}
                 height={3238}
