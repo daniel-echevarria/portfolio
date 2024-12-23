@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { inter } from "./ui/fonts";
-import Link from "next/link";
-import Image from "next/image";
-import projects from "../data/projects.json";
-import Card from "@/components/Card";
+import Nav from "@/app/ui/Nav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,24 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl mx-auto`}
       >
-        <>
-          <nav className="z-10 w-full justify-between flex text-grey-900 text-xl font-bold p-8 sm:p-20">
-            <Link className={`hover:underline`} href="/">
-              Daniel Echevarria
-            </Link>
-            <Link className={`hover:underline`} href={"/about"}>
-              About
-            </Link>
-          </nav>
-          {children}
-          <footer>
-            <div className="text-sm text-center p-2">
-              <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
-            </div>
-          </footer>
-        </>
+        <Nav />
+        {children}
+        <footer className="mb-2">
+          <div className="text-sm text-center p-2">
+            <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
