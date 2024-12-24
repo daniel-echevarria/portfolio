@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <main
-      className="grid lg:grid-cols-[1fr_1fr] text-sm md:text-xl lg:text-l p-8 gap-10 sm:p-20"
+      className="grid lg:grid-cols-[2fr_3fr] items-center text-sm md:text-xl lg:text-l p-8 gap-10 sm:p-20"
       aria-label="About Daniel Echevarria"
     >
       <Image
@@ -21,7 +21,7 @@ export default function Page() {
         <p className="p-8">Hello there 👋</p>
 
         <p className="px-8">
-          Thank you for stopping by and taking the time to learn more about me.
+          Thank you for stopping by and taking the time to learn more about me!
         </p>
 
         <p className="px-8 mt-5">
@@ -34,11 +34,12 @@ export default function Page() {
         </p>
 
         <p className="px-8 mt-5">
-          Beyond coding, I’m an avid chess player and bouldering enthusiast. I
-          love the mental challenge of strategy games and the physical
-          problem-solving of climbing, both of which inspire my approach to
-          tackling complex projects. I’m also interested in UX design and enjoy
-          finding innovative solutions to improve usability and engagement.
+          When I’m not coding, you’ll probably find me playing chess or tackling
+          a new bouldering route. I love the mental challenge of strategy games
+          and the physical problem-solving of climbing, both of which shape my
+          approach to complex tasks and projects. I’m also interested in UX
+          design and always looking for creative ways to make things more
+          intuitive and engaging for users.
         </p>
 
         <p className="px-8 mt-8 text-center">
