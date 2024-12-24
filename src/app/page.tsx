@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import projects from "../data/projects.json";
 import Card from "@/app/ui/Card";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
