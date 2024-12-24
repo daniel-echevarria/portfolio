@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`grid grid-rows-[100px_1fr_20px] lg:grid-rows-[400px_1fr_20px] items-center justify-items-center min-h-screen p-8 sm:p-20 ]`}
+        className={`grid grid-rows-[100px_1fr_20px] lg:grid-rows-[300px_1fr_20px] items-center justify-items-center min-h-screen p-8 sm:p-20 ]`}
       >
         <h1
           className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl `}
@@ -22,7 +22,7 @@ export default function Home() {
           Programming Artist.
         </h1>
 
-        <main className="w-full lg:max-w-7xl mt-8">
+        <main className="w-full lg:max-w-7xl mt-8 sm:mt-20">
           <div className="lg:grid grid-cols-2 gap-32">
             <div className="flex flex-col gap-16 lg:gap-32">
               {projects.map(

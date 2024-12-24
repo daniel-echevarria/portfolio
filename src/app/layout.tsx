@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
-        <footer className="mb-2">
+        <footer className=" mb-2">
           <div className="text-sm text-center p-2">
             <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
           </div>
