@@ -5,19 +5,12 @@ import Card from "@/app/ui/Card";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
-  const miniBio = `I'm Daniel, an independent full-stack web developer based in
-    Berlin. I'm passionate about the creative
-    process of taking an idea, breaking it apart, and
-    materializing it, piece by piece. Let's do it together!`;
+  const miniBio = `I'm Daniel, an independent full-stack web developer based in Berlin. I'm passionate about the creative process of taking an idea, breaking it apart, and materializing it, piece by piece. Let's do it together!`;
 
   return (
     <>
-      <div
-        className={`grid grid-rows-[100px_1fr_20px] lg:grid-rows-[300px_1fr_20px] items-center justify-items-center min-h-screen p-8 sm:p-20 ]`}
-      >
-        <h1
-          className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl `}
-        >
+      <div className="grid grid-rows-[100px_1fr_20px] lg:grid-rows-[300px_1fr_20px] items-center justify-items-center min-h-screen p-8 sm:p-20">
+        <h1 className="w-full font-semibold text-3xl sm:text-5xl lg:text-7xl">
           Full Stack Web Developer. <br />
           Programming Artist.
         </h1>
@@ -54,32 +47,31 @@ export default function Home() {
               )}
             </div>
           </div>
+
           <div className="flex flex-col-reverse lg:grid grid-cols-2 mt-16 lg:mt-64 pb-16 border-b border-gray-900">
-            <div className="grid grid-rows[1px_1px_1fr] lg:grid-rows-[1fr_1px_1fr]">
+            <div className="grid lg:grid-rows-[1fr_1px_1fr]">
               <div></div>
               <div className="bg-gray-900 mr-10"></div>
               <div className="lg:py-10 mr-10">
-                <p className="font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                 <p className="font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                   A dedicated tech enthusiast eager to help bring your next idea
                   to life.
                 </p>
                 <p className="hidden sm:block text-l lg:text-xl mt-10">
                   {miniBio}
-                  {miniBio}
                 </p>
               </div>
             </div>
-            <div className="flex flex-col justify-end lg:pl-10 py-10 ">
+
+            <div className="flex flex-col justify-end lg:pl-10 py-10">
               <Image
                 src="/me.jpg"
-                alt="picture of daniel echevarria looking professional"
-                alt="picture of daniel echevarria looking professional"
+                alt="Picture of Daniel Echevarria looking professional"
                 width={2428}
                 height={3238}
                 priority
               />
-              <div className="hidden lg:flex gap-3 mt-5 ">
+              <div className="hidden lg:flex gap-3 mt-5">
                 <a href="https://www.linkedin.com/in/daniel-e-772683335">
                   <FaLinkedin size={26} />
                 </a>
@@ -91,7 +83,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="flex gap-2 mt-5 lg:hidden justify-center gap-10">
+              <div className="flex gap-2 mt-5 lg:hidden justify-center">
                 <a href="https://www.linkedin.com/in/daniel-e-772683335">
                   <FaLinkedin size={32} />
                 </a>
