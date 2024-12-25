@@ -44,7 +44,7 @@ export default function Page() {
 
         <p className="px-8 mt-8 text-center">
           <a
-            href="/contact"
+            href="mailto:dan.echevarri@gmail.com"
             className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
           >
             Let’s Connect!
