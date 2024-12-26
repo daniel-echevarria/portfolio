@@ -1,7 +1,7 @@
 import Image from "next/image";
 import projects from "../data/projects.json";
 import Card from "@/app/ui/Card";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import SocialMediaLinks from "./ui/SocialMediaIcons";
 
 export default function Home() {
   const miniBio = `I'm Daniel, an independent full-stack web developer based in Berlin. I'm passionate about the creative process of taking an idea, breaking it apart, and materializing it, piece by piece. Let's do it together!`;
@@ -70,29 +70,7 @@ export default function Home() {
                 height={3238}
                 priority
               />
-              <div className="hidden lg:flex gap-3 mt-5">
-                <a href="https://www.linkedin.com/in/daniel-e-772683335">
-                  <FaLinkedin size={26} />
-                </a>
-                <a href="https://github.com/daniel-echevarria">
-                  <FaGithub size={26} />
-                </a>
-                <a href="mailto:dan.echevarri@gmail.com">
-                  <FaEnvelope size={26} />
-                </a>
-              </div>
-
-              <div className="flex gap-2 mt-5 lg:hidden justify-center">
-                <a href="https://www.linkedin.com/in/daniel-e-772683335">
-                  <FaLinkedin size={32} />
-                </a>
-                <a href="https://github.com/daniel-echevarria">
-                  <FaGithub size={32} />
-                </a>
-                <a href="mailto:dan.echevarri@gmail.com">
-                  <FaEnvelope size={32} />
-                </a>
-              </div>
+              <SocialMediaLinks desktopIconSize={26} mobileIconSize={42} />
             </div>
           </div>
         </main>
