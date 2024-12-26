@@ -9,21 +9,24 @@ const SocialMediaIcons = ({
 }) => {
   const socialIcons = [
     {
+      id: 1,
       href: "https://www.linkedin.com/in/daniel-e-772683335",
       icon: FaLinkedin,
     },
     {
+      id: 2,
       href: "https://github.com/daniel-echevarria",
       icon: FaGithub,
     },
     {
+      id: 3,
       href: "mailto:dan.echevarri@gmail.com",
       icon: FaEnvelope,
     },
   ];
 
   const desktopIcons = socialIcons.map((icon) => (
-    <a href={icon.href}>
+    <a href={icon.href} key={icon.id}>
       <icon.icon
         size={desktopIconSize}
         className="hover:-translate-y-0.5"
@@ -32,7 +35,7 @@ const SocialMediaIcons = ({
   ));
 
   const mobileIcons = socialIcons.map((icon) => (
-    <a href={icon.href}>
+    <a href={icon.href} key={icon.id}>
       <icon.icon size={mobileIconSize}></icon.icon>
     </a>
   ));
