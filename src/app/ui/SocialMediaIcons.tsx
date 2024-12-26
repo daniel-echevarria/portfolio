@@ -10,7 +10,7 @@ const SocialMediaIcons = ({
   const socialIcons = [
     {
       id: 1,
-      href: "https://www.linkedin.com/in/daniel-e-772683335",
+      href: "https://www.linkedin.com/in/dan-echevarria",
       icon: FaLinkedin,
     },
     {
