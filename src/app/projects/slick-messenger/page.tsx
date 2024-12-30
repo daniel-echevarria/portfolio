@@ -4,6 +4,8 @@ import projects from "../../../data/projects.json";
 import Image from "next/image";
 import { FaReact } from "react-icons/fa";
 import { SiRubyonrails } from "react-icons/si";
+import TechnologyTile from "@/app/ui/TechnologyTile";
+import technologies from "@/data/technologies";
 
 export default function Page() {
   const slick = projects.find((pro) => pro.id === "slick");
@@ -27,7 +29,12 @@ export default function Page() {
           and Netlify (frontend), Slick Messenger highlights scalability and
           cross-platform compatibility.
         </p>
-        <div className="flex gap-3 mt-8">
+        <div className="flex gap-3 mt-8 text-blue-300">
+          <TechnologyTile
+            technology={technologies.react}
+            size={24}
+            color={"red"}
+          />
           <span className="flex items-center gap-2 text-sm border border-gray-900 p-2 rounded-3xl">
             <SiRubyonrails size={24} /> Ruby on Rails
           </span>
