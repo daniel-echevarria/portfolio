@@ -1,5 +1,6 @@
 [
   {
+    "id": "slick",
     "title": "Slick Messenger",
     "subtitle": "A slack clone",
     "live-link": "https://slick-messenger.netlify.app",
@@ -12,6 +13,7 @@
     }
   },
   {
+    "id": "waldo",
     "title": "Where is Waldo",
     "subtitle": "A photo tagging game",
     "live-link": "https://wherethefuckiswaldo.netlify.app",
@@ -24,6 +26,7 @@
     }
   },
   {
+    "id": "pokememorize",
     "title": "Pokememorize",
     "subtitle": "A memory card game",
     "live-link": "https://pokememorize.netlify.app/",
@@ -36,9 +39,10 @@
     }
   },
   {
+    "id": "chess",
     "title": "Terminal Chess",
     "subtitle": "A chess game in the terminal",
-    "live-link": "https://replit.com/@SpookyKasper/chess-game",
+    "live-link": "https://glitch.com/edit/#!/freckle-round-cornflower",
     "link": "terminal-chess",
     "image": {
       "src": "/terminal-chess.png",

@@ -44,7 +44,7 @@ const SocialMediaIcons = ({
     <>
       <div className="hidden lg:flex gap-3 mt-5 ">{desktopIcons}</div>
 
-      <div className="flex gap-5 mt-5 lg:hidden justify-center">
+      <div className="flex gap-10 mt-5 lg:hidden justify-center">
         {mobileIcons}
       </div>
     </>

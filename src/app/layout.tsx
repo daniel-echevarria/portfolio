@@ -30,13 +30,15 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl mx-auto`}
       >
-        <Nav />
-        {children}
-        <footer className=" mb-2">
-          <div className="text-sm text-center p-2">
-            <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
-          </div>
-        </footer>
+        <div className="grid grid-rows-[50px_1fr_50px] lg:grid-rows-[50px_1fr_50px] items-center justify-items-center min-h-screen p-8 sm:px-16k">
+          <Nav />
+          {children}
+          <footer className="w-full my-14 sm:my-14">
+            <div className="text-sm text-center p-2">
+              <p>&copy; 2024 Daniel Echevarria. All Rights Reserved.</p>
+            </div>
+          </footer>
+        </div>
       </body>
     </html>
   );

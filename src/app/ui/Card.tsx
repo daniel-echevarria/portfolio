@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type ImageObj = {
   src: string;
@@ -12,11 +13,15 @@ type CardProps = {
   live: string;
   title: string;
   subtitle: string;
+  page: string;
 };
 
-const Card: React.FC<CardProps> = ({ image, title, live, subtitle }) => {
+const Card: React.FC<CardProps> = ({ image, page, title, live, subtitle }) => {
   return (
     <div className="focus:shadow-outline focus:outline-none flex flex-col items-center justify-center rounded-3xl relative ">
+      <Link href={`projects/${page}`}>
+        <button>Go</button>
+      </Link>
       <a
         href={`${live}`}
         className="border transition-transform lg:hover:scale-90 overflow-hidden duration-500 rounded-3xl"
