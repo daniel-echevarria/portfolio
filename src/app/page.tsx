@@ -26,7 +26,6 @@ export default function Home() {
                     key={index}
                     image={project.image}
                     title={project.title}
-                    live={project.liveLink}
                     page={project.clientLink}
                     subtitle={project.subtitle}
                   />
@@ -41,7 +40,6 @@ export default function Home() {
                   <Card
                     key={index}
                     image={project.image}
-                    live={project.liveLink}
                     page={project.clientLink}
                     title={project.title}
                     subtitle={project.subtitle}
