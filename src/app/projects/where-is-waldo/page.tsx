@@ -1,4 +1,3 @@
-import ProjectContent from "@/app/ui/ProjectContent";
 import React from "react";
 import projects from "../../../data/projects.json";
 import ProjectPage from "@/app/ui/ProjectPage";
@@ -10,10 +9,12 @@ export default function Page() {
     return (
       <div>
         <p className="mt-5">
+          {`
           An engaging and interactive web app inspired by the classic "Where's
           Waldo?" books. Users search for Waldo and other hidden characters in a
           vibrant image while racing against the clock. Built with React for a
           dynamic front-end and Ruby on Rails for a robust backend.
+          `}
         </p>
         <p className="mt-5">
           This project highlights skills in creating interactive gameplay,

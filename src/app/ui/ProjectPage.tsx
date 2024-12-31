@@ -11,7 +11,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
     <>
       <div className="flex flex-col gap-4">
         <Image
-          className="rounded-lg border-2 border-gray-900 w-full"
+          className="rounded-lg border border-gray-900  w-full shadow-lg"
           src={project.image.src}
           alt={project.image.alt}
           width={project.image.width}

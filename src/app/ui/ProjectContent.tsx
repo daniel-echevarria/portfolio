@@ -22,6 +22,7 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
     const technology = technologies[tech];
     return (
       <TechnologyTile
+        key={tech}
         technology={technology}
         size={16}
         color={secondaryColor}
