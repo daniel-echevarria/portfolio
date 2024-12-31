@@ -3,9 +3,17 @@
     "id": "slick",
     "title": "Slick Messenger",
     "subtitle": "A slack clone",
-    "live-link": "https://slick-messenger.netlify.app",
-    "link": "slick-messenger",
-    "technologies": ["react", "rails", "javascript", "postgresql", "css"],
+    "liveLink": "https://slick-messenger.netlify.app",
+    "githubLink": "https://github.com/daniel-echevarria/slick-messenger",
+    "clientLink": "slick-messenger",
+    "technologies": [
+      "react",
+      "rails",
+      "javascript",
+      "ruby",
+      "postgresql",
+      "css"
+    ],
     "image": {
       "src": "/slick-messenger.png",
       "alt": "slick messenger app screen shot",
@@ -17,8 +25,17 @@
     "id": "waldo",
     "title": "Where is Waldo",
     "subtitle": "A photo tagging game",
-    "live-link": "https://wherethefuckiswaldo.netlify.app",
-    "link": "where-is-waldo",
+    "liveLink": "https://wherethefuckiswaldo.netlify.app",
+    "githubLink": "https://github.com/daniel-echevarria/where-is-waldo",
+    "clientLink": "where-is-waldo",
+    "technologies": [
+      "react",
+      "rails",
+      "javascript",
+      "ruby",
+      "postgresql",
+      "css"
+    ],
     "image": {
       "src": "/where-is-waldo.png",
       "alt": "where is waldo app screen shot",
@@ -30,26 +47,30 @@
     "id": "pokememorize",
     "title": "Pokememorize",
     "subtitle": "A memory card game",
-    "live-link": "https://pokememorize.netlify.app/",
-    "link": "pokememory",
+    "liveLink": "https://pokememorize.netlify.app/",
+    "githubLink": "https://github.com/daniel-echevarria/pokememorize",
+    "clientLink": "pokememory",
     "image": {
       "src": "/pokememory.png",
       "alt": "Pokememory app screen shot",
       "width": 1300,
       "height": 1600
-    }
+    },
+    "technologies": ["react", "javascript", "css"]
   },
   {
     "id": "chess",
     "title": "Terminal Chess",
     "subtitle": "A chess game in the terminal",
-    "live-link": "https://glitch.com/edit/#!/freckle-round-cornflower",
-    "link": "terminal-chess",
+    "liveLink": "https://glitch.com/edit/#!/freckle-round-cornflower",
+    "githubLink": "https://github.com/daniel-echevarria/terminal-chess",
+    "clientLink": "terminal-chess",
     "image": {
       "src": "/terminal-chess.png",
       "alt": "terminal chess app screen shot",
       "width": 1300,
       "height": 1600
-    }
+    },
+    "technologies": ["ruby"]
   }
 ]
