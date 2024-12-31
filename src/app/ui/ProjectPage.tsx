@@ -19,7 +19,6 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
 }) => {
   const technologiesTiles = tools.map((tech) => {
     const technology = technologies[tech];
-    console.log(technology);
     return (
       <TechnologyTile
         technology={technology}
@@ -37,15 +36,15 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
         </h2>
         <div className="">{text}</div>
         <div className="flex gap-3 mt-8">{technologiesTiles}</div>
-        <p className="mt-8 text-center">
-          <a
-            href={live}
-            className="w-48 inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors"
-          >
-            Try It Out
-          </a>
-        </p>
       </section>
+      <p className="text-center ">
+        <a
+          href={live}
+          className="w-48 inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors"
+        >
+          Try It Out
+        </a>
+      </p>
     </>
   );
 };

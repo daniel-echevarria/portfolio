@@ -42,7 +42,7 @@ export default function Page() {
         title={slick.title}
         subtitle={slick.subtitle}
         text={<Text />}
-        live={slick["live-link"]}
+        live={slick.liveLink}
         tools={slick.technologies}
         secondaryColor="orange"
       />
