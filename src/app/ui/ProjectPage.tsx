@@ -1,8 +1,24 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
 
+type Project = {
+  id: string;
+  title: string;
+  subtitle: string;
+  liveLink: string;
+  githubLink: string;
+  clientLink: string;
+  technologies: string[];
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+};
+
 type ProjectPageProps = {
-  project: object | undefined;
+  project: Project;
   text: React.ReactNode;
 };
 

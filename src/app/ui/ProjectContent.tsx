@@ -11,15 +11,6 @@ type ProjectContentProps = {
   secondaryColor?: string;
 };
 
-// type Technology = {
-//   name: string;
-//   icon: React.ElementType;
-// };
-
-// type Technologies = {
-//   [key: string]: Technology;
-// };
-
 const ProjectContent: React.FC<ProjectContentProps> = ({
   title,
   text,
