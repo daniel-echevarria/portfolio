@@ -1,7 +1,6 @@
-import ProjectPage from "@/app/ui/ProjectPage";
 import React from "react";
 import projects from "../../../data/projects.json";
-import Image from "next/image";
+import ProjectPage from "@/app/ui/ProjectPage";
 
 export default function Page() {
   const chess = projects.find((pro) => pro.id === "chess");
@@ -10,20 +9,16 @@ export default function Page() {
     return (
       <div>
         <p className="mt-5">
-          chess Messenger is a full-stack messaging app built with Ruby on Rails
-          and React, drawing inspiration from{" "}
-          <a href="https://slack.com" className="text-blue-500">
-            Slack
-          </a>
-          . It allows users to send direct messages, manage profiles, and upload
-          profile pictures through a secure and user-friendly interface.
+          Dive into the timeless strategy of chess with the Terminal Chess Game,
+          built entirely in Ruby. Featuring full chess mechanics, two-player
+          mode, and a clean ASCII board display, this project brings the
+          excitement of chess to your terminal. Save and load your games, enjoy
+          intuitive move validation, and challenge your friends to a match.
         </p>
         <p className="mt-5">
-          This project showcases my expertise in modern web development,
-          featuring a RESTful API, token-based authentication with Devise-JWT,
-          and file uploads using Active Storage. Deployed on Render (backend)
-          and Netlify (frontend), chess Messenger highlights scalability and
-          cross-platform compatibility.
+          Showcasing advanced programming and a love for chess, this game
+          highlights skills in logic design and object-oriented programming.
+          Experience the art of chess, one terminal command at a time!
         </p>
       </div>
     );
@@ -31,21 +26,7 @@ export default function Page() {
 
   return (
     <>
-      <Image
-        className="rounded-md border-2 border-gray-900 w-full"
-        src={chess.image.src}
-        alt={chess.image.alt}
-        width={chess.image.width}
-        height={chess.image.height}
-      />
-      <ProjectPage
-        title={chess.title}
-        subtitle={chess.subtitle}
-        text={<Text />}
-        live={chess.liveLink}
-        tools={chess.technologies}
-        secondaryColor="orange"
-      />
+      <ProjectPage project={chess} text={<Text />} />
     </>
   );
 }

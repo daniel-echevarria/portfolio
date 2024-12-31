@@ -1,7 +1,6 @@
-import ProjectPage from "@/app/ui/ProjectPage";
 import React from "react";
 import projects from "../../../data/projects.json";
-import Image from "next/image";
+import ProjectPage from "@/app/ui/ProjectPage";
 
 export default function Page() {
   const pokememorize = projects.find((pro) => pro.id === "pokememorize");
@@ -10,20 +9,16 @@ export default function Page() {
     return (
       <div>
         <p className="mt-5">
-          pokememorize Messenger is a full-stack messaging app built with Ruby
-          on Rails and React, drawing inspiration from{" "}
-          <a href="https://slack.com" className="text-blue-500">
-            Slack
-          </a>
-          . It allows users to send direct messages, manage profiles, and upload
-          profile pictures through a secure and user-friendly interface.
+          Challenge your memory and strategy skills with Pokememorize, an
+          exciting game where you must avoid clicking the same Pokémon card
+          twice. Featuring dynamic Pokémon content powered by the Pokémon API,
+          responsive design, and engaging visuals!
         </p>
         <p className="mt-5">
-          This project showcases my expertise in modern web development,
-          featuring a RESTful API, token-based authentication with Devise-JWT,
-          and file uploads using Active Storage. Deployed on Render (backend)
-          and Netlify (frontend), pokememorize Messenger highlights scalability
-          and cross-platform compatibility.
+          This project combines fun gameplay with seamless functionality. Built
+          with React and styled with CSS, it showcases creative problem-solving
+          and interactive design. Test your memory, aim for a high score, and
+          uncover the hidden level that only legends can conquer!
         </p>
       </div>
     );
@@ -31,21 +26,7 @@ export default function Page() {
 
   return (
     <>
-      <Image
-        className="rounded-md border-2 border-gray-900 w-full"
-        src={pokememorize.image.src}
-        alt={pokememorize.image.alt}
-        width={pokememorize.image.width}
-        height={pokememorize.image.height}
-      />
-      <ProjectPage
-        title={pokememorize.title}
-        subtitle={pokememorize.subtitle}
-        text={<Text />}
-        live={pokememorize.liveLink}
-        tools={pokememorize.technologies}
-        secondaryColor="orange"
-      />
+      <ProjectPage project={pokememorize} text={<Text />} />
     </>
   );
 }

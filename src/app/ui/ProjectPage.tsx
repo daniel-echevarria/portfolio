@@ -1,50 +1,39 @@
-import TechnologyTile from "./TechnologyTile";
-import technologies from "@/data/technologies";
+import Image from "next/image";
+import ProjectContent from "./ProjectContent";
 
 type ProjectPageProps = {
-  live: string;
-  title: string;
+  project: object;
   text: React.ReactNode;
-  tools: string[];
-  subtitle?: string;
-  secondaryColor?: string;
 };
 
-const ProjectPage: React.FC<ProjectPageProps> = ({
-  title,
-  text,
-  live,
-  tools,
-  secondaryColor,
-}) => {
-  const technologiesTiles = tools.map((tech) => {
-    const technology = technologies[tech];
-    return (
-      <TechnologyTile
-        technology={technology}
-        size={16}
-        color={secondaryColor}
-      />
-    );
-  });
-
+const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
   return (
     <>
-      <section className="px-8">
-        <h2 className="text-2xl font-bold " color={secondaryColor}>
-          {title}
-        </h2>
-        <div className="">{text}</div>
-        <div className="flex gap-3 mt-8">{technologiesTiles}</div>
-      </section>
-      <p className="text-center ">
-        <a
-          href={live}
-          className="w-48 inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors"
-        >
-          Try It Out
-        </a>
-      </p>
+      <div className="flex flex-col gap-4">
+        <Image
+          className="rounded-lg border-2 border-gray-900 w-full"
+          src={project.image.src}
+          alt={project.image.alt}
+          width={project.image.width}
+          height={project.image.height}
+        />
+        <p className="text-center">
+          <a
+            href={project?.liveLink}
+            className="w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors"
+          >
+            Try It Out
+          </a>
+        </p>
+      </div>
+      <ProjectContent
+        title={project.title}
+        subtitle={project.subtitle}
+        text={text}
+        github={project.githubLink}
+        tools={project.technologies}
+        secondaryColor="orange"
+      />
     </>
   );
 };

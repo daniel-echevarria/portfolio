@@ -1,14 +1,17 @@
 import Image from "next/image";
+import React from "react";
 import projects from "../data/projects.json";
-import Card from "@/app/ui/Card";
-import SocialMediaLinks from "./ui/SocialMediaIcons";
+import Card from "./ui/Card";
+import SocialMediaIcons from "./ui/SocialMediaIcons";
 
 export default function Home() {
   const miniBio = `I'm Daniel, an independent full-stack web developer based in Berlin. I'm passionate about the creative process of taking an idea, breaking it apart, and materializing it, piece by piece. Let's do it together!`;
 
   return (
-    <div>
-      <h1 className="w-full font-semibold text-4xl mt-8 sm:my-32 lg:my-40 sm:text-5xl lg:text-7xl">
+    <div className="animate-fade-in-up opacity-0 ">
+      <h1
+        className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl lg:my-56 `}
+      >
         Full Stack Web Developer. <br />
         Programming Artist.
       </h1>
@@ -71,7 +74,7 @@ export default function Home() {
               height={3238}
               priority
             />
-            <SocialMediaLinks desktopIconSize={28} mobileIconSize={38} />
+            <SocialMediaIcons desktopIconSize={28} mobileIconSize={38} />
           </div>
         </div>
       </main>

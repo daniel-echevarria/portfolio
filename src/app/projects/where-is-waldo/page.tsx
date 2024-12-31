@@ -1,7 +1,7 @@
-import ProjectPage from "@/app/ui/ProjectPage";
+import ProjectContent from "@/app/ui/ProjectContent";
 import React from "react";
 import projects from "../../../data/projects.json";
-import Image from "next/image";
+import ProjectPage from "@/app/ui/ProjectPage";
 
 export default function Page() {
   const waldo = projects.find((pro) => pro.id === "waldo");
@@ -10,20 +10,15 @@ export default function Page() {
     return (
       <div>
         <p className="mt-5">
-          waldo Messenger is a full-stack messaging app built with Ruby on Rails
-          and React, drawing inspiration from{" "}
-          <a href="https://slack.com" className="text-blue-500">
-            Slack
-          </a>
-          . It allows users to send direct messages, manage profiles, and upload
-          profile pictures through a secure and user-friendly interface.
+          An engaging and interactive web app inspired by the classic "Where's
+          Waldo?" books. Users search for Waldo and other hidden characters in a
+          vibrant image while racing against the clock. Built with React for a
+          dynamic front-end and Ruby on Rails for a robust backend.
         </p>
         <p className="mt-5">
-          This project showcases my expertise in modern web development,
-          featuring a RESTful API, token-based authentication with Devise-JWT,
-          and file uploads using Active Storage. Deployed on Render (backend)
-          and Netlify (frontend), waldo Messenger highlights scalability and
-          cross-platform compatibility.
+          This project highlights skills in creating interactive gameplay,
+          real-time feedback, and a leaderboard to track top players. Test your
+          observation skills and compete to be the fastest at finding Waldo!
         </p>
       </div>
     );
@@ -31,21 +26,7 @@ export default function Page() {
 
   return (
     <>
-      <Image
-        className="rounded-md border-2 border-gray-900 w-full"
-        src={waldo.image.src}
-        alt={waldo.image.alt}
-        width={waldo.image.width}
-        height={waldo.image.height}
-      />
-      <ProjectPage
-        title={waldo.title}
-        subtitle={waldo.subtitle}
-        text={<Text />}
-        live={waldo.liveLink}
-        tools={waldo.technologies}
-        secondaryColor="orange"
-      />
+      <ProjectPage project={waldo} text={<Text />} />
     </>
   );
 }

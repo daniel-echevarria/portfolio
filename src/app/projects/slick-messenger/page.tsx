@@ -1,7 +1,6 @@
-import ProjectPage from "@/app/ui/ProjectPage";
 import React from "react";
 import projects from "../../../data/projects.json";
-import Image from "next/image";
+import ProjectPage from "@/app/ui/ProjectPage";
 
 export default function Page() {
   const slick = projects.find((pro) => pro.id === "slick");
@@ -31,21 +30,7 @@ export default function Page() {
 
   return (
     <>
-      <Image
-        className="rounded-md border-2 border-gray-900 w-full"
-        src={slick.image.src}
-        alt={slick.image.alt}
-        width={slick.image.width}
-        height={slick.image.height}
-      />
-      <ProjectPage
-        title={slick.title}
-        subtitle={slick.subtitle}
-        text={<Text />}
-        live={slick.liveLink}
-        tools={slick.technologies}
-        secondaryColor="orange"
-      />
+      <ProjectPage project={slick} text={<Text />} />
     </>
   );
 }
