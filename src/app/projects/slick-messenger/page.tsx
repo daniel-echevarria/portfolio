@@ -2,25 +2,9 @@ import ProjectPage from "@/app/ui/ProjectPage";
 import React from "react";
 import projects from "../../../data/projects.json";
 import Image from "next/image";
-import { FaReact } from "react-icons/fa";
-import { SiRubyonrails } from "react-icons/si";
-import TechnologyTile from "@/app/ui/TechnologyTile";
-import technologies from "@/data/technologies";
 
 export default function Page() {
-  const secondaryColor = "orange";
   const slick = projects.find((pro) => pro.id === "slick");
-  const technologiesTiles = slick.technologies.map((tech) => {
-    const technology = technologies[tech];
-    console.log(technology);
-    return (
-      <TechnologyTile
-        technology={technology}
-        size={24}
-        color={secondaryColor}
-      />
-    );
-  });
 
   const Text = () => {
     return (
@@ -41,30 +25,27 @@ export default function Page() {
           and Netlify (frontend), Slick Messenger highlights scalability and
           cross-platform compatibility.
         </p>
-        <div className="flex gap-3 mt-8">{technologiesTiles}</div>
       </div>
     );
   };
 
   return (
     <>
-      {slick && (
-        <>
-          <Image
-            className="rounded-md border-2 border-gray-900"
-            src={slick.image.src}
-            alt={slick.image.alt}
-            width={slick.image.width}
-            height={slick.image.height}
-          ></Image>
-          <ProjectPage
-            title={slick.title}
-            subtitle={slick.subtitle}
-            text={<Text />}
-            live={slick["live-link"]}
-          />
-        </>
-      )}
+      <Image
+        className="rounded-md border-2 border-gray-900 w-full"
+        src={slick.image.src}
+        alt={slick.image.alt}
+        width={slick.image.width}
+        height={slick.image.height}
+      />
+      <ProjectPage
+        title={slick.title}
+        subtitle={slick.subtitle}
+        text={<Text />}
+        live={slick["live-link"]}
+        tools={slick.technologies}
+        secondaryColor="orange"
+      />
     </>
   );
 }
