@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
-import technologies from "@/data/technologies";
 
 type Project = {
   id: string;
