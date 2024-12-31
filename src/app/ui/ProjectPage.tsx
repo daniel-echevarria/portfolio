@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
+import technologies from "@/data/technologies";
 
 type Project = {
   id: string;
@@ -8,7 +9,7 @@ type Project = {
   liveLink: string;
   githubLink: string;
   clientLink: string;
-  technologies: string[];
+  technologies: AllowedTechnologies[];
   image: {
     src: string;
     alt: string;
@@ -16,6 +17,14 @@ type Project = {
     height: number;
   };
 };
+
+type AllowedTechnologies =
+  | "ruby"
+  | "react"
+  | "rails"
+  | "javascript"
+  | "postgresql"
+  | "css";
 
 type ProjectPageProps = {
   project: Project;
@@ -47,7 +56,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
         subtitle={project?.subtitle}
         text={text}
         github={project?.githubLink}
-        tools={project?.technologies}
+        tools={project.technologies}
         secondaryColor="orange"
       />
     </>
