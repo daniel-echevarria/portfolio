@@ -28,9 +28,5 @@ export default function Page() {
     );
   };
 
-  return (
-    <>
-      <ProjectPage project={slick} text={<Text />} />
-    </>
-  );
+  return <>{slick && <ProjectPage project={slick} text={<Text />} />}</>;
 }

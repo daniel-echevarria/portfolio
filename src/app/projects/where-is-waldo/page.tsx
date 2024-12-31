@@ -25,9 +25,5 @@ export default function Page() {
     );
   };
 
-  return (
-    <>
-      <ProjectPage project={waldo} text={<Text />} />
-    </>
-  );
+  return <>{waldo && <ProjectPage project={waldo} text={<Text />} />}</>;
 }

@@ -26,7 +26,7 @@ export default function Page() {
 
   return (
     <>
-      <ProjectPage project={pokememorize} text={<Text />} />
+      {pokememorize && <ProjectPage project={pokememorize} text={<Text />} />}
     </>
   );
 }
