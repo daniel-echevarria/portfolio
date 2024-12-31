@@ -2,7 +2,7 @@ import Image from "next/image";
 import ProjectContent from "./ProjectContent";
 
 type ProjectPageProps = {
-  project: object;
+  project: object | undefined;
   text: React.ReactNode;
 };
 
