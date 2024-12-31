@@ -6,10 +6,19 @@ type ProjectContentProps = {
   title: string;
   github: string;
   text: React.ReactNode;
-  tools: string[];
+  tools: (keyof typeof technologies)[];
   subtitle?: string;
   secondaryColor?: string;
 };
+
+// type Technology = {
+//   name: string;
+//   icon: React.ElementType;
+// };
+
+// type Technologies = {
+//   [key: string]: Technology;
+// };
 
 const ProjectContent: React.FC<ProjectContentProps> = ({
   title,
