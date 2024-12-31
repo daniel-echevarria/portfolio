@@ -5,6 +5,7 @@
     "subtitle": "A slack clone",
     "live-link": "https://slick-messenger.netlify.app",
     "link": "slick-messenger",
+    "technologies": ["react", "rails", "javascript", "postgresql", "css"],
     "image": {
       "src": "/slick-messenger.png",
       "alt": "slick messenger app screen shot",

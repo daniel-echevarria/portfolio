@@ -5,7 +5,7 @@ type ProjectPageProps = {
   title?: string;
   subtitle?: string;
   text: React.ReactNode;
-  children: React.ReactNode;
+  technologies: string[];
 };
 
 const ProjectPage: React.FC<ProjectPageProps> = ({
@@ -13,11 +13,9 @@ const ProjectPage: React.FC<ProjectPageProps> = ({
   subtitle,
   text,
   live,
-  children,
 }) => {
   return (
     <>
-      {children}
       <section className="px-8">
         <h2 className="text-2xl font-bold">{title}</h2>
         <div className="">{text}</div>

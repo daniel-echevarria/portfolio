@@ -8,7 +8,19 @@ import TechnologyTile from "@/app/ui/TechnologyTile";
 import technologies from "@/data/technologies";
 
 export default function Page() {
+  const secondaryColor = "orange";
   const slick = projects.find((pro) => pro.id === "slick");
+  const technologiesTiles = slick.technologies.map((tech) => {
+    const technology = technologies[tech];
+    console.log(technology);
+    return (
+      <TechnologyTile
+        technology={technology}
+        size={24}
+        color={secondaryColor}
+      />
+    );
+  });
 
   const Text = () => {
     return (
@@ -29,19 +41,7 @@ export default function Page() {
           and Netlify (frontend), Slick Messenger highlights scalability and
           cross-platform compatibility.
         </p>
-        <div className="flex gap-3 mt-8 text-blue-300">
-          <TechnologyTile
-            technology={technologies.react}
-            size={24}
-            color={"red"}
-          />
-          <span className="flex items-center gap-2 text-sm border border-gray-900 p-2 rounded-3xl">
-            <SiRubyonrails size={24} /> Ruby on Rails
-          </span>
-          <span className="flex items-center gap-2 text-sm border border-gray-900 p-2 rounded-3xl">
-            <FaReact size={24} /> React
-          </span>
-        </div>
+        <div className="flex gap-3 mt-8">{technologiesTiles}</div>
       </div>
     );
   };
@@ -49,12 +49,7 @@ export default function Page() {
   return (
     <>
       {slick && (
-        <ProjectPage
-          title={slick.title}
-          subtitle={slick.subtitle}
-          text={<Text />}
-          live={slick["live-link"]}
-        >
+        <>
           <Image
             className="rounded-md border-2 border-gray-900"
             src={slick.image.src}
@@ -62,7 +57,13 @@ export default function Page() {
             width={slick.image.width}
             height={slick.image.height}
           ></Image>
-        </ProjectPage>
+          <ProjectPage
+            title={slick.title}
+            subtitle={slick.subtitle}
+            text={<Text />}
+            live={slick["live-link"]}
+          />
+        </>
       )}
     </>
   );
