@@ -1,5 +1,8 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
+import technologies from "@/data/technologies";
+
+type TechnologyKey = keyof typeof technologies;
 
 type Project = {
   id: string;
@@ -8,7 +11,7 @@ type Project = {
   liveLink: string;
   githubLink: string;
   clientLink: string;
-  technologies: AllowedTechnologies[];
+  technologies: TechnologyKey[];
   image: {
     src: string;
     alt: string;
@@ -16,14 +19,6 @@ type Project = {
     height: number;
   };
 };
-
-type AllowedTechnologies =
-  | "ruby"
-  | "react"
-  | "rails"
-  | "javascript"
-  | "postgresql"
-  | "css";
 
 type ProjectPageProps = {
   project: Project;

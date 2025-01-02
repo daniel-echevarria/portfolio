@@ -2,11 +2,13 @@ import { FaGithub } from "react-icons/fa";
 import TechnologyTile from "./TechnologyTile";
 import technologies from "@/data/technologies";
 
+type TechnologyKey = keyof typeof technologies;
+
 type ProjectContentProps = {
   title: string;
   github: string;
   text: React.ReactNode;
-  tools: (keyof typeof technologies)[];
+  tools: TechnologyKey[];
   subtitle?: string;
   secondaryColor?: string;
 };
