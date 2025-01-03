@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <main
-      className="grid lg:grid-cols-[2fr_3fr] items-center text-sm md:text-xl lg:text-lg p-8 gap-10 sm:p-20 "
+      className="grid lg:grid-cols-[2fr_3fr] items-center text-sm md:text-xl lg:text-lg p-8 gap-10 sm:p-20 animate-fade-in-up "
       aria-label="About Daniel Echevarria"
     >
       <Image

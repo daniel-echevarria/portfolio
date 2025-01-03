@@ -6,6 +6,7 @@
     "liveLink": "https://slick-messenger.netlify.app",
     "githubLink": "https://github.com/daniel-echevarria/slick-messenger",
     "clientLink": "slick-messenger",
+    "color": "purple",
     "technologies": [
       "react",
       "rails",
@@ -28,6 +29,7 @@
     "liveLink": "https://wherethefuckiswaldo.netlify.app",
     "githubLink": "https://github.com/daniel-echevarria/where-is-waldo",
     "clientLink": "where-is-waldo",
+    "color": "orange",
     "technologies": [
       "react",
       "rails",
@@ -50,6 +52,7 @@
     "liveLink": "https://pokememorize.netlify.app/",
     "githubLink": "https://github.com/daniel-echevarria/pokememorize",
     "clientLink": "pokememory",
+    "color": "indigo",
     "image": {
       "src": "/pokememory.png",
       "alt": "Pokememory app screen shot",
@@ -65,6 +68,7 @@
     "liveLink": "https://glitch.com/edit/#!/freckle-round-cornflower",
     "githubLink": "https://github.com/daniel-echevarria/terminal-chess",
     "clientLink": "terminal-chess",
+    "color": "red",
     "image": {
       "src": "/terminal-chess.png",
       "alt": "terminal chess app screen shot",

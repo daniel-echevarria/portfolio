@@ -1,7 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import TechnologyTile from "./TechnologyTile";
 import technologies from "@/data/technologies";
-import { ColorClassKey } from "./TechnologyTile";
+import { ColorClassKey } from "@/data/colorClasses";
+import colorClasses from "@/data/colorClasses";
 
 type ProjectContentProps = {
   title: string;
@@ -19,6 +20,8 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
   tools,
   secondaryColor,
 }) => {
+  const { textColor } = colorClasses[secondaryColor];
+
   const technologiesTiles = tools.map((tech) => {
     const technology = technologies[tech as keyof typeof technologies];
     return (
@@ -34,12 +37,10 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
   return (
     <>
       <section className="px-8">
-        <div className="flex items-center gap-4">
-          <h2 className="text-2xl font-bold " color={secondaryColor}>
-            {title}
-          </h2>
+        <div className={`flex items-center gap-4 ${textColor}`}>
+          <h2 className={`text-2xl font-bold `}>{title}</h2>
           <a href={github}>
-            <FaGithub size={24} />
+            <FaGithub size={24} className="hover:-translate-y-0.5" />
           </a>
         </div>
         <div className="">{text}</div>

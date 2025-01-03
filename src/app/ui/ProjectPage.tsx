@@ -1,5 +1,7 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
+import { ColorClassKey } from "@/data/colorClasses";
+import colorClasses from "@/data/colorClasses";
 
 export interface Project {
   id: string;
@@ -8,6 +10,7 @@ export interface Project {
   liveLink: string;
   githubLink: string;
   clientLink: string;
+  color: ColorClassKey;
   technologies: string[];
   image: {
     src: string;
@@ -36,7 +39,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
         <p className="text-center">
           <a
             href={project?.liveLink}
-            className="w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors"
+            className={`w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors`}
           >
             Try It Out
           </a>
@@ -48,7 +51,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
         text={text}
         github={project?.githubLink}
         tools={project.technologies}
-        secondaryColor="orange"
+        secondaryColor={project.color}
       />
     </>
   );
