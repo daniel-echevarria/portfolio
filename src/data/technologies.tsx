@@ -12,6 +12,6 @@ const Technologies = {
   rails: { name: "Rails", icon: SiRubyonrails },
   postgresql: { name: "PostgreSQL", icon: SiPostgresql },
   css: { name: "CSS3", icon: SiCss3 },
-} as const;
+};
 
 export default Technologies;

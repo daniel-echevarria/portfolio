@@ -1,24 +1,21 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
-import technologies from "@/data/technologies";
 
-type TechnologyKey = keyof typeof technologies;
-
-type Project = {
+export interface Project {
   id: string;
   title: string;
   subtitle: string;
   liveLink: string;
   githubLink: string;
   clientLink: string;
-  technologies: TechnologyKey[];
+  technologies: string[];
   image: {
     src: string;
     alt: string;
     width: number;
     height: number;
   };
-};
+}
 
 type ProjectPageProps = {
   project: Project;

@@ -1,5 +1,32 @@
-const TechnologyTile = ({ technology, size, color }) => {
-  const colorClasses = {
+import { IconType } from "react-icons";
+
+type ColorDetails = {
+  border: string;
+  text: string;
+  hover: string;
+};
+
+export type ColorClassKey = "red" | "indigo" | "purple" | "orange";
+
+type ColorClass = {
+  [key in ColorClassKey]: ColorDetails;
+};
+
+type Technology = {
+  name: string;
+  icon: IconType;
+};
+
+const TechnologyTile = ({
+  technology,
+  size,
+  color,
+}: {
+  technology: Technology;
+  size: number;
+  color: ColorClassKey;
+}) => {
+  const colorClasses: ColorClass = {
     red: {
       border: "border-red-600",
       text: "text-red-600",

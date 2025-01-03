@@ -1,16 +1,15 @@
 import { FaGithub } from "react-icons/fa";
 import TechnologyTile from "./TechnologyTile";
 import technologies from "@/data/technologies";
-
-type TechnologyKey = keyof typeof technologies;
+import { ColorClassKey } from "./TechnologyTile";
 
 type ProjectContentProps = {
   title: string;
   github: string;
   text: React.ReactNode;
-  tools: TechnologyKey[];
+  tools: string[];
   subtitle?: string;
-  secondaryColor?: string;
+  secondaryColor: ColorClassKey;
 };
 
 const ProjectContent: React.FC<ProjectContentProps> = ({
@@ -21,7 +20,7 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
   secondaryColor,
 }) => {
   const technologiesTiles = tools.map((tech) => {
-    const technology = technologies[tech];
+    const technology = technologies[tech as keyof typeof technologies];
     return (
       <TechnologyTile
         key={tech}
