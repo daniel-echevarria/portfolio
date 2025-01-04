@@ -10,7 +10,7 @@ type ProjectContentProps = {
   text: React.ReactNode;
   tools: string[];
   subtitle?: string;
-  secondaryColor: ColorClassKey;
+  secondaryColor: string;
 };
 
 const ProjectContent: React.FC<ProjectContentProps> = ({

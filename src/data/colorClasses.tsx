@@ -1,5 +1,3 @@
-export type ColorClassKey = "indigo" | "purple" | "red" | "orange";
-
 type ColorDetails = {
   borderColor: string;
   textColor: string;
@@ -8,7 +6,7 @@ type ColorDetails = {
 };
 
 type ColorClass = {
-  [key in ColorClassKey]: ColorDetails;
+  [key: string]: ColorDetails;
 };
 
 const colorClasses: ColorClass = {

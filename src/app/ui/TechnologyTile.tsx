@@ -1,6 +1,5 @@
 import { IconType } from "react-icons";
 import colorClasses from "@/data/colorClasses";
-import { ColorClassKey } from "@/data/colorClasses";
 
 type Technology = {
   name: string;
@@ -14,7 +13,7 @@ const TechnologyTile = ({
 }: {
   technology: Technology;
   size: number;
-  color: ColorClassKey;
+  color: string;
 }) => {
   const { borderColor, textColor, hoverColor } = colorClasses[color];
   console.log(hoverColor);

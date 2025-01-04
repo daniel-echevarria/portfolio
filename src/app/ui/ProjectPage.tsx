@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
-import { ColorClassKey } from "@/data/colorClasses";
 
 export interface Project {
   id: string;
@@ -9,7 +8,7 @@ export interface Project {
   liveLink: string;
   githubLink: string;
   clientLink: string;
-  color: ColorClassKey;
+  color: string;
   technologies: string[];
   image: {
     src: string;
