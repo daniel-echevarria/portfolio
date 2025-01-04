@@ -5,6 +5,7 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/data/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -23,11 +24,5 @@ export default {
       },
     },
   },
-  safelist: [
-    {
-      pattern: /(border|text|hover:bg|bg)-(amber|yellow|red|orange)-[0-9]{3}/,
-    },
-  ],
-
   plugins: [],
 } satisfies Config;

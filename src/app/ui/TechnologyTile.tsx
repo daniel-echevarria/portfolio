@@ -17,7 +17,7 @@ const TechnologyTile = ({
   color: ColorClassKey;
 }) => {
   const { borderColor, textColor, hoverColor } = colorClasses[color];
-
+  console.log(hoverColor);
   return (
     <span
       className={`flex items-center gap-2 text-sm border p-2 rounded-3xl ${borderColor} ${textColor} ${hoverColor} hover:text-white`}

@@ -1,4 +1,4 @@
-export type ColorClassKey = "amber" | "red" | "yellow" | "orange";
+export type ColorClassKey = "indigo" | "purple" | "red" | "orange";
 
 type ColorDetails = {
   borderColor: string;
@@ -12,23 +12,23 @@ type ColorClass = {
 };
 
 const colorClasses: ColorClass = {
+  indigo: {
+    borderColor: "border-indigo-700",
+    textColor: "text-indigo-700",
+    hoverColor: "hover:bg-indigo-700",
+    bgColor: "bg-indigo-700",
+  },
   red: {
     borderColor: "border-red-600",
     textColor: "text-red-600",
     hoverColor: "hover:bg-red-600",
     bgColor: "bg-red-600",
   },
-  amber: {
-    borderColor: "border-amber-400",
-    textColor: "text-amber-400",
-    hoverColor: "hover:bg-amber-400",
-    bgColor: "bg-amber-400",
-  },
-  yellow: {
-    borderColor: "border-yellow-600",
-    textColor: "text-yellow-600",
-    hoverColor: "hover:bg-yellow-600",
-    bgColor: "bg-yellow-600",
+  purple: {
+    borderColor: "border-purple-900",
+    textColor: "text-purple-900",
+    hoverColor: "hover:bg-purple-900",
+    bgColor: "bg-purple-900",
   },
   orange: {
     borderColor: "border-orange-600",
