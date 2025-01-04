@@ -1,7 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import TechnologyTile from "./TechnologyTile";
 import technologies from "@/data/technologies";
-import { ColorClassKey } from "@/data/colorClasses";
 import colorClasses from "@/data/colorClasses";
 
 type ProjectContentProps = {
