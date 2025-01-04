@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectContent from "./ProjectContent";
 import { ColorClassKey } from "@/data/colorClasses";
-import colorClasses from "@/data/colorClasses";
 
 export interface Project {
   id: string;

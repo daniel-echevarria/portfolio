@@ -6,7 +6,7 @@
     "liveLink": "https://slick-messenger.netlify.app",
     "githubLink": "https://github.com/daniel-echevarria/slick-messenger",
     "clientLink": "slick-messenger",
-    "color": "purple",
+    "color": "amber",
     "technologies": [
       "react",
       "rails",
@@ -52,7 +52,7 @@
     "liveLink": "https://pokememorize.netlify.app/",
     "githubLink": "https://github.com/daniel-echevarria/pokememorize",
     "clientLink": "pokememory",
-    "color": "indigo",
+    "color": "yellow",
     "image": {
       "src": "/pokememory.png",
       "alt": "Pokememory app screen shot",

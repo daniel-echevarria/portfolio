@@ -12,16 +12,22 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
-    animation: {
-      "fade-in-up": "fadeInUp 0.8s ease-out forwards ",
-    },
-    keyframes: {
-      fadeInUp: {
-        "0%": { opacity: "0", transform: "translateY(-20px)" },
-        "100%": { opacity: "1", transform: "translateY(0)" },
+      animation: {
+        "fade-in-up": "fadeInUp 0.8s ease-out forwards",
+      },
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(-20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
     },
   },
+  safelist: [
+    {
+      pattern: /(border|text|hover:bg|bg)-(amber|yellow|red|orange)-[0-9]{3}/,
+    },
+  ],
+
   plugins: [],
 } satisfies Config;

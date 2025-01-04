@@ -21,7 +21,6 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
   secondaryColor,
 }) => {
   const { textColor } = colorClasses[secondaryColor];
-
   const technologiesTiles = tools.map((tech) => {
     const technology = technologies[tech as keyof typeof technologies];
     return (
