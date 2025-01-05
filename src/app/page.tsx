@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="animate-fade-in-up opacity-0 ">
       <h1
-        className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl lg:my-56 `}
+        className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl mt-8 lg:my-56 `}
       >
         Full Stack Web Developer. <br />
         Programming Artist.
