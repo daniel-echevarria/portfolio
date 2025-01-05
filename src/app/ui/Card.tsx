@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ image, page, title, subtitle }) => {
         className="border transition-transform lg:hover:scale-90 overflow-hidden duration-700 rounded-3xl "
       >
         <Image
-          className="md:p-10 overflow-hidden bg-black transition-transform lg:hover:scale-125 hover:cursor-pointer  duration-700 object-center object-cover border rounded-3xl"
+          className="md:p-10 overflow-hidden bg-black transition-transform lg:hover:scale-125 hover:cursor-pointer  duration-700 object-center object-cover rounded-3xl"
           src={image.src}
           alt={image.alt}
           width={image.width}
