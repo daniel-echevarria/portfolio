@@ -21,8 +21,8 @@ export default function Page() {
           This project showcases my expertise in modern web development,
           featuring a RESTful API, token-based authentication with Devise-JWT,
           and file uploads using Active Storage. Deployed on Render (backend)
-          and Netlify (frontend), Slick Messenger highlights scalability and
-          cross-platform compatibility.
+          and Netlify (frontend), Slick Messenger demonstrates my ability to
+          integrate multiple technologies into a cohesive application.
         </p>
       </div>
     );

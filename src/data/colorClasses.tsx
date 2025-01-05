@@ -17,10 +17,10 @@ const colorClasses: ColorClass = {
     bgColor: "bg-indigo-700",
   },
   red: {
-    borderColor: "border-red-600",
-    textColor: "text-red-600",
-    hoverColor: "hover:bg-red-600",
-    bgColor: "bg-red-600",
+    borderColor: "border-red-500",
+    textColor: "text-red-500",
+    hoverColor: "hover:bg-red-500",
+    bgColor: "bg-red-500",
   },
   purple: {
     borderColor: "border-purple-900",
