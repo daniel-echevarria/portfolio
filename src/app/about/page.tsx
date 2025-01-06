@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SocialMediaIcons from "../ui/SocialMediaIcons";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
         <p className="mt-4 text-center">
           <a
             href="mailto:dan.echevarri@gmail.com"
-            className=" lg:w-full inline-block px-6 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
+            className=" lg:w-full inline-block px-6 py-4 text-xl bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
           >
             Let’s Connect!
           </a>
@@ -40,7 +41,7 @@ export default function Page() {
             digital experiences.
           </p>
 
-          <p className="hidden md:block mt-5">
+          <p className="hidden sm:block mt-5">
             When I’m not coding, you’ll probably find me playing chess or
             tackling a new bouldering route. I love the mental challenge of
             strategy games and the physical problem-solving of climbing, both of
@@ -53,6 +54,8 @@ export default function Page() {
             Feel free to explore my portfolio and connect with me to collaborate
             on exciting projects!
           </p>
+
+          <SocialMediaIcons desktopIconSize={28} mobileIconSize={32} />
         </div>
       </section>
     </main>
