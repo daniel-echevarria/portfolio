@@ -42,7 +42,7 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
           </a>
         </div>
         <div className="">{text}</div>
-        <div className="flex gap-3 mt-8">{technologiesTiles}</div>
+        <div className="flex gap-3 mt-8 flex-wrap ">{technologiesTiles}</div>
       </section>
     </>
   );
