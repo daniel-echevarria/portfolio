@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel Echevarria Portfolio",
+  title: "Daniel Echevarria",
   description: "Created by Daniel Echevarria",
 };
 
