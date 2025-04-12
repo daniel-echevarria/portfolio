@@ -5,7 +5,7 @@ import Card from "./ui/Card";
 import SocialMediaIcons from "./ui/SocialMediaIcons";
 
 export default function Home() {
-  const miniBio = `I'm Daniel, an independent full-stack web developer based in Berlin. I'm passionate about the creative process of taking an idea, breaking it apart, and materializing it, piece by piece. Let's do it together!`;
+  const miniBio = `I'm Daniel, a full-stack engineer based in Berlin. I really enjoy the process of taking an idea, breaking it apart, and materialising it, piece by piece. Let's do it together!`;
 
   return (
     <div className="animate-fade-in-up opacity-0 ">
