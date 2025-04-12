@@ -38,6 +38,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
           <a
             href={project?.liveLink}
             className={`w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 `}
+            target="_blank"
           >
             Try It Out
           </a>
