@@ -33,12 +33,12 @@ export default function Page() {
           <p className="mt-5">Hello there 👋</p>
 
           <p className="mt-5">
-            I’m Daniel Echevarria, a passionate full-stack web developer based
-            in Berlin. I specialize in building dynamic, user-friendly websites
-            and applications using modern technologies like React, Rails, and
-            Next.js. With a keen eye for detail and a collaborative mindset, I
-            thrive on turning ideas into functional, beautifully designed
-            digital experiences.
+            I’m Daniel Echevarria, a full-stack web developer based in Berlin. I
+            specialize in building dynamic, user-friendly websites and
+            applications using modern technologies like Typescript, React,
+            Python3, Rails, and Next.js. With a keen eye for detail and a
+            collaborative mindset, I enjoy turning ideas into functional,
+            beautifully designed digital experiences.
           </p>
 
           <p className="hidden sm:block mt-5">
@@ -52,7 +52,7 @@ export default function Page() {
 
           <p className="mt-5">
             Feel free to explore my portfolio and connect with me to collaborate
-            on exciting projects!
+            on projects!
           </p>
 
           <SocialMediaIcons desktopIconSize={28} mobileIconSize={32} />
