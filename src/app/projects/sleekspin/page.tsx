@@ -15,10 +15,10 @@ export default function Page() {
           accurate, structured release info.
         </p>
         <p className="mt-5">
-          Built with Next.js, TypeScript, and Tailwind CSS, it features state
-          management with Zustand and a clean UI focused on speed and usability.
-          This MVP is already useful for vinyl shops, collectors, or DJs who
-          need clear, professional-looking labels.
+          Currently under development, SleekSpin aims to offer a clean interface
+          with minimal friction, powered by React, Tailwind CSS, and Zustand for
+          state management. It is designed to help collectors, vinyl shops, and
+          DJs create clear, professional-looking labels quickly and easily.
         </p>
       </div>
     );

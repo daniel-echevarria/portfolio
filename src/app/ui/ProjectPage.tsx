@@ -35,13 +35,19 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
           height={project?.image.height}
         />
         <p className="text-center">
-          <a
-            href={project?.liveLink}
-            className={`w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 `}
-            target="_blank"
-          >
-            Try It Out
-          </a>
+          {project?.liveLink ? (
+            <a
+              href={project?.liveLink}
+              className={`w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 `}
+              target="_blank"
+            >
+              Try It Out
+            </a>
+          ) : (
+            <span className="w-full inline-block px-6 py-3 bg-gray-300 text-gray-700 font-medium rounded-lg cursor-not-allowed">
+              Coming Soon!
+            </span>
+          )}
         </p>
       </div>
       <ProjectContent
