@@ -34,6 +34,12 @@ const colorClasses: ColorClass = {
     hoverColor: "hover:bg-orange-600",
     bgColor: "bg-orange-600",
   },
+  teal: {
+    borderColor: "border-teal-600",
+    textColor: "text-teal-600",
+    hoverColor: "hover:bg-teal-600",
+    bgColor: "bg-teal-600",
+  },
 };
 
 export default colorClasses;

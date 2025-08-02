@@ -1,4 +1,25 @@
 [
+   {
+    "id": "sleekspin",
+    "title": "SleekSpin",
+    "subtitle": "Create printable record labels using Discogs data",
+    "liveLink": "https://sleekspin.com",
+    "githubLink": "https://github.com/daniel-echevarria/sleekspin",
+    "clientLink": "sleekspin",
+    "color": "teal",
+    "technologies": [
+      "nextjs",
+      "typescript",
+      "tailwindcss",
+      "discogs-api"
+    ],
+    "image": {
+      "src": "/sleekspin.png",
+      "alt": "SleekSpin app screen shot",
+      "width": 1300,
+      "height": 1600
+    }
+  },
   {
     "id": "slick",
     "title": "Slick Messenger",
@@ -77,4 +98,5 @@
     },
     "technologies": ["ruby"]
   }
+
 ]
