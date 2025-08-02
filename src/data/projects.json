@@ -1,8 +1,8 @@
 [
-   {
+  {
     "id": "sleekspin",
     "title": "SleekSpin",
-    "subtitle": "Create printable record labels using Discogs data",
+    "subtitle": "Effortlessly create stylish, printable record labels using live Discogs data.",
     "liveLink": "",
     "githubLink": "https://github.com/daniel-echevarria/sleekspin",
     "clientLink": "sleekspin",
@@ -23,7 +23,7 @@
   {
     "id": "slick",
     "title": "Slick Messenger",
-    "subtitle": "A slack clone",
+    "subtitle": "Your modern team chat app, built with speed and collaboration in mind.",
     "liveLink": "https://slick-messenger.netlify.app",
     "githubLink": "https://github.com/daniel-echevarria/slick-messenger",
     "clientLink": "slick-messenger",
@@ -46,7 +46,7 @@
   {
     "id": "waldo",
     "title": "Where is Waldo",
-    "subtitle": "A photo tagging game",
+    "subtitle": "Test your sharp eyes in this fast-paced photo tagging challenge.",
     "liveLink": "https://wheretheheckiswaldo.netlify.app",
     "githubLink": "https://github.com/daniel-echevarria/where-is-waldo",
     "clientLink": "where-is-waldo",
@@ -69,7 +69,7 @@
   {
     "id": "pokememorize",
     "title": "Pokememorize",
-    "subtitle": "A memory card game",
+    "subtitle": "Sharpen your memory with this addictive Pokémon-themed card game.",
     "liveLink": "https://pokememorize.netlify.app/",
     "githubLink": "https://github.com/daniel-echevarria/pokememorize",
     "clientLink": "pokememory",
@@ -80,12 +80,16 @@
       "width": 1300,
       "height": 1600
     },
-    "technologies": ["react", "javascript", "css"]
+    "technologies": [
+      "react",
+      "javascript",
+      "css"
+    ]
   },
   {
     "id": "chess",
     "title": "Terminal Chess",
-    "subtitle": "A chess game in the terminal",
+    "subtitle": "Classic chess brought to life in the terminal, strategy meets simplicity.",
     "liveLink": "https://glitch.com/edit/#!/freckle-round-cornflower",
     "githubLink": "https://github.com/daniel-echevarria/terminal-chess",
     "clientLink": "terminal-chess",
@@ -96,7 +100,8 @@
       "width": 1300,
       "height": 1600
     },
-    "technologies": ["ruby"]
+    "technologies": [
+      "ruby"
+    ]
   }
-
 ]
