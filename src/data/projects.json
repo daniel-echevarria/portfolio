@@ -7,12 +7,7 @@
     "githubLink": "https://github.com/daniel-echevarria/sleekspin",
     "clientLink": "sleekspin",
     "color": "teal",
-    "technologies": [
-      "nextjs",
-      "typescript",
-      "tailwindcss",
-      "discogs-api"
-    ],
+    "technologies": ["nextjs", "typescript", "tailwindcss", "discogs-api"],
     "image": {
       "src": "/sleekspin.png",
       "alt": "SleekSpin app screen shot",
@@ -80,28 +75,6 @@
       "width": 1300,
       "height": 1600
     },
-    "technologies": [
-      "react",
-      "javascript",
-      "css"
-    ]
-  },
-  {
-    "id": "chess",
-    "title": "Terminal Chess",
-    "subtitle": "Classic chess brought to life in the terminal, strategy meets simplicity.",
-    "liveLink": "https://glitch.com/edit/#!/freckle-round-cornflower",
-    "githubLink": "https://github.com/daniel-echevarria/terminal-chess",
-    "clientLink": "terminal-chess",
-    "color": "red",
-    "image": {
-      "src": "/terminal-chess.png",
-      "alt": "terminal chess app screen shot",
-      "width": 1300,
-      "height": 1600
-    },
-    "technologies": [
-      "ruby"
-    ]
+    "technologies": ["react", "javascript", "css"]
   }
 ]
