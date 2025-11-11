@@ -13,7 +13,7 @@ export default function Home() {
         className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl mt-8 lg:my-56 `}
       >
         Full Stack Engineer <br />
-        Programming Artist.
+        Creative Technologist
       </h1>
 
       <main className="w-full lg:max-w-7xl mt-8 sm:mt-20">
