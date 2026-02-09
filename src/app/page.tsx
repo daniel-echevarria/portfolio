@@ -1,18 +1,16 @@
-import Image from "next/image";
-import React from "react";
-import projects from "../data/projects.json";
-import Card from "./ui/Card";
-import SocialMediaIcons from "./ui/SocialMediaIcons";
+import Image from 'next/image';
+import React from 'react';
+import projects from '../data/projects.json';
+import Card from './ui/Card';
+import SocialMediaIcons from './ui/SocialMediaIcons';
 
 export default function Home() {
   const miniBio = `I'm Daniel, a full-stack engineer based in Berlin. I enjoy the process of taking an idea, breaking it apart, and materialising it, piece by piece. Let's do it together!`;
 
   return (
     <div className="animate-fade-in-up opacity-0 ">
-      <h1
-        className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl mt-8 lg:my-56 `}
-      >
-        Full Stack Engineer <br />
+      <h1 className={`w-full font-semibold text-3xl sm:text-5xl lg:text-7xl mt-8 lg:my-56 `}>
+        Product Engineer <br />
         Creative Technologist
       </h1>
 
@@ -29,7 +27,7 @@ export default function Home() {
                     page={project.clientLink}
                     subtitle={project.subtitle}
                   />
-                )
+                ),
             )}
           </div>
 
@@ -44,7 +42,7 @@ export default function Home() {
                     title={project.title}
                     subtitle={project.subtitle}
                   />
-                )
+                ),
             )}
           </div>
         </div>
@@ -55,12 +53,9 @@ export default function Home() {
             <div className="bg-gray-900 mr-10"></div>
             <div className="lg:py-10 mr-10">
               <p className="font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-                A dedicated tech enthusiast eager to help bring your next idea
-                to life.
+                A dedicated tech enthusiast eager to help bring your next idea to life.
               </p>
-              <p className="hidden sm:block text-l lg:text-xl mt-10">
-                {miniBio}
-              </p>
+              <p className="hidden sm:block text-l lg:text-xl mt-10">{miniBio}</p>
             </div>
           </div>
 
