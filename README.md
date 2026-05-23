@@ -1,22 +1,17 @@
-# 🌟 My Portfolio
+# danielechevarria.com
 
-This is the repository for my personal portfolio, showcasing my skills, projects, and passion for web development.
+Personal portfolio site built with Next.js, React, TypeScript, and Tailwind CSS. Deployed on Vercel.
 
-## 🚀 About
+**Live:** [danielechevarria.com](https://danielechevarria.com)
 
-I'm **Daniel**, an independent full-stack web developer based in Berlin. My portfolio highlights my work and provides an easy way to connect with me.
+## Tech Stack
 
-## 🛠️ Tech Stack
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
-- **Next.js** & **React**
-- **CSS Modules** / **Tailwind CSS**
-- **Deployed on Vercel**
+## Contact
 
-## 🌐 Live Demo
-
-Check out my portfolio here: [My Portfolio](https://danielechevarria.com)
-
-## 📬 Contact
-
-- Email: [dan.echevarri@gmail.com](mailto:dan.echevarri@gmail.com)
-- LinkedIn: [linkedin.com/in/daniel-echevarria](https://www.linkedin.com/in/daniel-e-772683335/)
+- [dan.echevarri@gmail.com](mailto:dan.echevarri@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/daniel-e-772683335/)
