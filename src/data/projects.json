@@ -4,7 +4,7 @@
     "title": "SleekSpin",
     "subtitle": "Effortlessly create stylish, printable record labels using live Discogs data.",
     "liveLink": "https://sleekspin.com",
-    "githubLink": "https://github.com/daniel-echevarria/sleekspin",
+    "githubLink": "",
     "clientLink": "sleekspin",
     "color": "teal",
     "technologies": ["nextjs", "typescript", "tailwindcss", "discogs-api"],

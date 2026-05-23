@@ -37,9 +37,11 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
       <section className="px-8">
         <div className={`flex items-center gap-4 ${textColor}`}>
           <h2 className={`text-2xl font-bold `}>{title}</h2>
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <FaGithub size={24} className="hover:-translate-y-0.5" />
-          </a>
+          {github && (
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <FaGithub size={24} className="hover:-translate-y-0.5" />
+            </a>
+          )}
         </div>
         <div className="">{text}</div>
         <div className="flex gap-3 mt-8 flex-wrap ">{technologiesTiles}</div>
