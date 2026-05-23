@@ -21,7 +21,7 @@ export default function Home() {
               (project, index) =>
                 index % 2 === 0 && (
                   <Card
-                    key={index}
+                    key={project.id}
                     image={project.image}
                     title={project.title}
                     page={project.clientLink}
@@ -36,7 +36,7 @@ export default function Home() {
               (project, index) =>
                 index % 2 === 1 && (
                   <Card
-                    key={index}
+                    key={project.id}
                     image={project.image}
                     page={project.clientLink}
                     title={project.title}

@@ -14,7 +14,7 @@ I'm **Daniel**, an independent full-stack web developer based in Berlin. My port
 
 ## 🌐 Live Demo
 
-Check out my portfolio here: [My Portfolio](https://portfolio-clu7h0wpk-echevarrias-projects.vercel.app/)
+Check out my portfolio here: [My Portfolio](https://danielechevarria.com)
 
 ## 📬 Contact
 

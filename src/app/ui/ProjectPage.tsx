@@ -29,17 +29,18 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
       <div className="flex flex-col gap-4">
         <Image
           className="rounded-lg border border-gray-900 w-full shadow-lg min-w-80"
-          src={project?.image.src}
-          alt={project?.image.alt}
-          width={project?.image.width}
-          height={project?.image.height}
+          src={project.image.src}
+          alt={project.image.alt}
+          width={project.image.width}
+          height={project.image.height}
         />
         <p className="text-center">
-          {project?.liveLink ? (
+          {project.liveLink ? (
             <a
-              href={project?.liveLink}
+              href={project.liveLink}
               className={`w-full inline-block hover:cursor-pointer px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 `}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Try It Out
             </a>
@@ -51,10 +52,10 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project, text }) => {
         </p>
       </div>
       <ProjectContent
-        title={project?.title}
-        subtitle={project?.subtitle}
+        title={project.title}
+        subtitle={project.subtitle}
         text={text}
-        github={project?.githubLink}
+        github={project.githubLink}
         tools={project.technologies}
         secondaryColor={project.color}
       />
