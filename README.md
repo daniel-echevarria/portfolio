@@ -1,8 +1,8 @@
-# danielechevarria.com
+# danechevarria.com
 
 Personal portfolio site built with Next.js, React, TypeScript, and Tailwind CSS. Deployed on Vercel.
 
-**Live:** [danielechevarria.com](https://danielechevarria.com)
+**Live:** [danechevarria.com](https://danechevarria.com)
 
 ## Tech Stack
 
